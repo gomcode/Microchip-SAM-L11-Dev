@@ -1,0 +1,14 @@
+format_version: v1.0
+configName: default
+folderName: SAM-L11-Dev_Secure
+frameworkPath: C:\HardwareWorks\HarmonyFramework_605
+processor: ATSAML11D16A
+projectName: SAM-L11-Dev_Secure
+settings:
+  PackageFilter: ''
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'true'
+  CMSISPath: dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: dev_packs\Microchip\SAML11_DFP\4.4.149\atdf\ATSAML11D16A.atdf
