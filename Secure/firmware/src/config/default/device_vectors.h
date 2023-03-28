@@ -112,10 +112,10 @@ typedef struct _H3DeviceVectors
   pfn_handler_t pfnSERCOM1_1_Handler;               /* 27 Serial Communication Interface 1 */
   pfn_handler_t pfnSERCOM1_2_Handler;               /* 28 Serial Communication Interface 1 */
   pfn_handler_t pfnSERCOM1_OTHER_Handler;           /* 29 Serial Communication Interface 1 */
-  pfn_handler_t pfnReserved30;
-  pfn_handler_t pfnReserved31;
-  pfn_handler_t pfnReserved32;
-  pfn_handler_t pfnReserved33;
+  pfn_handler_t pfnSERCOM2_0_Handler;               /* 30 Serial Communication Interface 2 */
+  pfn_handler_t pfnSERCOM2_1_Handler;               /* 31 Serial Communication Interface 2 */
+  pfn_handler_t pfnSERCOM2_2_Handler;               /* 32 Serial Communication Interface 2 */
+  pfn_handler_t pfnSERCOM2_OTHER_Handler;           /* 33 Serial Communication Interface 2 */
   pfn_handler_t pfnTC0_Handler;                     /* 34 Timer Counter 0 */
   pfn_handler_t pfnTC1_Handler;                     /* 35 Timer Counter 1 */
   pfn_handler_t pfnTC2_Handler;                     /* 36 Timer Counter 2 */

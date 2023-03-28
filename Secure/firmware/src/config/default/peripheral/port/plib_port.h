@@ -65,6 +65,51 @@
 // *****************************************************************************
 // *****************************************************************************
 
+/*** Macros for GPIO_PA07 pin ***/
+#define GPIO_PA07_Set()               (PORT_SEC_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 7U))
+#define GPIO_PA07_Clear()             (PORT_SEC_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 7U))
+#define GPIO_PA07_Toggle()            (PORT_SEC_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 7U))
+#define GPIO_PA07_OutputEnable()      (PORT_SEC_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 7U))
+#define GPIO_PA07_InputEnable()       (PORT_SEC_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 7U))
+#define GPIO_PA07_Get()               (((PORT_SEC_REGS->GROUP[0].PORT_IN >> 7U)) & 0x01U)
+#define GPIO_PA07_PIN                  PORT_PIN_PA07
+
+/*** Macros for GPIO_PA18 pin ***/
+#define GPIO_PA18_Set()               (PORT_SEC_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 18U))
+#define GPIO_PA18_Clear()             (PORT_SEC_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 18U))
+#define GPIO_PA18_Toggle()            (PORT_SEC_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 18U))
+#define GPIO_PA18_OutputEnable()      (PORT_SEC_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 18U))
+#define GPIO_PA18_InputEnable()       (PORT_SEC_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 18U))
+#define GPIO_PA18_Get()               (((PORT_SEC_REGS->GROUP[0].PORT_IN >> 18U)) & 0x01U)
+#define GPIO_PA18_PIN                  PORT_PIN_PA18
+
+/*** Macros for GPIO_PA23 pin ***/
+#define GPIO_PA23_Set()               (PORT_SEC_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 23U))
+#define GPIO_PA23_Clear()             (PORT_SEC_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 23U))
+#define GPIO_PA23_Toggle()            (PORT_SEC_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 23U))
+#define GPIO_PA23_OutputEnable()      (PORT_SEC_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 23U))
+#define GPIO_PA23_InputEnable()       (PORT_SEC_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 23U))
+#define GPIO_PA23_Get()               (((PORT_SEC_REGS->GROUP[0].PORT_IN >> 23U)) & 0x01U)
+#define GPIO_PA23_PIN                  PORT_PIN_PA23
+
+/*** Macros for GPIO_PA30 pin ***/
+#define GPIO_PA30_Set()               (PORT_SEC_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 30U))
+#define GPIO_PA30_Clear()             (PORT_SEC_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 30U))
+#define GPIO_PA30_Toggle()            (PORT_SEC_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 30U))
+#define GPIO_PA30_OutputEnable()      (PORT_SEC_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 30U))
+#define GPIO_PA30_InputEnable()       (PORT_SEC_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 30U))
+#define GPIO_PA30_Get()               (((PORT_SEC_REGS->GROUP[0].PORT_IN >> 30U)) & 0x01U)
+#define GPIO_PA30_PIN                  PORT_PIN_PA30
+
+/*** Macros for GPIO_PA31 pin ***/
+#define GPIO_PA31_Set()               (PORT_SEC_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 31U))
+#define GPIO_PA31_Clear()             (PORT_SEC_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 31U))
+#define GPIO_PA31_Toggle()            (PORT_SEC_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 31U))
+#define GPIO_PA31_OutputEnable()      (PORT_SEC_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 31U))
+#define GPIO_PA31_InputEnable()       (PORT_SEC_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 31U))
+#define GPIO_PA31_Get()               (((PORT_SEC_REGS->GROUP[0].PORT_IN >> 31U)) & 0x01U)
+#define GPIO_PA31_PIN                  PORT_PIN_PA31
+
 // *****************************************************************************
 /* PORT Group
 
@@ -132,9 +177,6 @@ PERIPHERAL_FUNCTION_I = 0x8,
 
 typedef enum
 {
-    /* PA31 pin */
-    PORT_PIN_PA31 = 31U,
-
     /* PA00 pin */
     PORT_PIN_PA00 = 0U,
 
@@ -153,8 +195,23 @@ typedef enum
     /* PA05 pin */
     PORT_PIN_PA05 = 5U,
 
+    /* PA06 pin */
+    PORT_PIN_PA06 = 6U,
+
+    /* PA07 pin */
+    PORT_PIN_PA07 = 7U,
+
     /* PA08 pin */
     PORT_PIN_PA08 = 8U,
+
+    /* PA09 pin */
+    PORT_PIN_PA09 = 9U,
+
+    /* PA10 pin */
+    PORT_PIN_PA10 = 10U,
+
+    /* PA11 pin */
+    PORT_PIN_PA11 = 11U,
 
     /* PA14 pin */
     PORT_PIN_PA14 = 14U,
@@ -180,8 +237,20 @@ typedef enum
     /* PA23 pin */
     PORT_PIN_PA23 = 23U,
 
+    /* PA24 pin */
+    PORT_PIN_PA24 = 24U,
+
+    /* PA25 pin */
+    PORT_PIN_PA25 = 25U,
+
+    /* PA27 pin */
+    PORT_PIN_PA27 = 27U,
+
     /* PA30 pin */
     PORT_PIN_PA30 = 30U,
+
+    /* PA31 pin */
+    PORT_PIN_PA31 = 31U,
 
     /* This element should not be used in any of the PORT APIs.
      * It will be used by other modules or application to denote that none of

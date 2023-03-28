@@ -48,6 +48,7 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
+#include <stdio.h>
 #include "peripheral/port/plib_port.h"
 #include "peripheral/nvic/plib_nvic.h"
 

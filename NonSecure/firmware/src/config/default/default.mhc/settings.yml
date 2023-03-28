@@ -1,9 +1,9 @@
 format_version: v1.0
 configName: default
-folderName: SAM-L11-Dev_Secure
+folderName: SAM-L11-Dev_NonSecure
 frameworkPath: C:\HardwareWorks\HarmonyFramework_605
-processor: ATSAML11D16A
-projectName: SAM-L11-Dev_Secure
+processor: ATSAML11E16A
+projectName: SAM-L11-Dev_NonSecure
 settings:
   PackageFilter: ''
   FORCE_OPTIMIZATION: 'false'
@@ -11,4 +11,4 @@ settings:
   TRUSTZONE: 'true'
   CMSISPath: dev_packs\arm\CMSIS\5.8.0
   MERGE_STRATEGY: USER_ALL
-  DFPPath: dev_packs\Microchip\SAML11_DFP\4.4.149\atdf\ATSAML11D16A.atdf
+  DFPPath: dev_packs\Microchip\SAML11_DFP\4.4.149\atdf\ATSAML11E16A.atdf

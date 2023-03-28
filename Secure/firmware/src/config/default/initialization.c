@@ -92,6 +92,7 @@
 #pragma config NONSECC_EVSYS = CLEAR
 #pragma config NONSECC_SERCOM0 = CLEAR
 #pragma config NONSECC_SERCOM1 = CLEAR
+#pragma config NONSECC_SERCOM2 = CLEAR
 #pragma config NONSECC_TC0 = CLEAR
 #pragma config NONSECC_TC1 = CLEAR
 #pragma config NONSECC_TC2 = CLEAR
@@ -151,6 +152,26 @@
 // *****************************************************************************
 // *****************************************************************************
 
+/*******************************************************************************
+  Function:
+    void STDIO_BufferModeSet ( void )
+
+  Summary:
+    Sets the buffering mode for stdin and stdout
+
+  Remarks:
+ ********************************************************************************/
+static void STDIO_BufferModeSet(void)
+{
+
+    /* Make stdin unbuffered */
+    setbuf(stdin, NULL);
+
+    /* Make stdout unbuffered */
+    setbuf(stdout, NULL);
+}
+
+
 
 
 /*******************************************************************************
@@ -170,6 +191,9 @@ void SYS_Initialize ( void* data )
 
     PM_Initialize();
 
+    STDIO_BufferModeSet();
+
+
   
     PORT_Initialize();
 
@@ -179,7 +203,16 @@ void SYS_Initialize ( void* data )
 
     NVMCTRL_Initialize();
 
+    SERCOM2_USART_Initialize();
+
+    SERCOM1_I2C_Initialize();
+
     EVSYS_Initialize();
+
+    SERCOM0_SPI_Initialize();
+
+	SYSTICK_TimerInitialize();
+    EIC_Initialize();
 
 
     NVIC_Initialize();
