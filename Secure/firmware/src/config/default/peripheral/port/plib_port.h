@@ -65,32 +65,32 @@
 // *****************************************************************************
 // *****************************************************************************
 
-/*** Macros for GPIO_PA07 pin ***/
-#define GPIO_PA07_Set()               (PORT_SEC_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 7U))
-#define GPIO_PA07_Clear()             (PORT_SEC_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 7U))
-#define GPIO_PA07_Toggle()            (PORT_SEC_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 7U))
-#define GPIO_PA07_OutputEnable()      (PORT_SEC_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 7U))
-#define GPIO_PA07_InputEnable()       (PORT_SEC_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 7U))
-#define GPIO_PA07_Get()               (((PORT_SEC_REGS->GROUP[0].PORT_IN >> 7U)) & 0x01U)
-#define GPIO_PA07_PIN                  PORT_PIN_PA07
+/*** Macros for GPIO_PA14 pin ***/
+#define GPIO_PA14_Set()               (PORT_SEC_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 14U))
+#define GPIO_PA14_Clear()             (PORT_SEC_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 14U))
+#define GPIO_PA14_Toggle()            (PORT_SEC_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 14U))
+#define GPIO_PA14_OutputEnable()      (PORT_SEC_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 14U))
+#define GPIO_PA14_InputEnable()       (PORT_SEC_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 14U))
+#define GPIO_PA14_Get()               (((PORT_SEC_REGS->GROUP[0].PORT_IN >> 14U)) & 0x01U)
+#define GPIO_PA14_PIN                  PORT_PIN_PA14
 
-/*** Macros for GPIO_PA18 pin ***/
-#define GPIO_PA18_Set()               (PORT_SEC_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 18U))
-#define GPIO_PA18_Clear()             (PORT_SEC_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 18U))
-#define GPIO_PA18_Toggle()            (PORT_SEC_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 18U))
-#define GPIO_PA18_OutputEnable()      (PORT_SEC_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 18U))
-#define GPIO_PA18_InputEnable()       (PORT_SEC_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 18U))
-#define GPIO_PA18_Get()               (((PORT_SEC_REGS->GROUP[0].PORT_IN >> 18U)) & 0x01U)
-#define GPIO_PA18_PIN                  PORT_PIN_PA18
+/*** Macros for GPIO_PA15 pin ***/
+#define GPIO_PA15_Set()               (PORT_SEC_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 15U))
+#define GPIO_PA15_Clear()             (PORT_SEC_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 15U))
+#define GPIO_PA15_Toggle()            (PORT_SEC_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 15U))
+#define GPIO_PA15_OutputEnable()      (PORT_SEC_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 15U))
+#define GPIO_PA15_InputEnable()       (PORT_SEC_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 15U))
+#define GPIO_PA15_Get()               (((PORT_SEC_REGS->GROUP[0].PORT_IN >> 15U)) & 0x01U)
+#define GPIO_PA15_PIN                  PORT_PIN_PA15
 
-/*** Macros for GPIO_PA23 pin ***/
-#define GPIO_PA23_Set()               (PORT_SEC_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 23U))
-#define GPIO_PA23_Clear()             (PORT_SEC_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 23U))
-#define GPIO_PA23_Toggle()            (PORT_SEC_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 23U))
-#define GPIO_PA23_OutputEnable()      (PORT_SEC_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 23U))
-#define GPIO_PA23_InputEnable()       (PORT_SEC_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 23U))
-#define GPIO_PA23_Get()               (((PORT_SEC_REGS->GROUP[0].PORT_IN >> 23U)) & 0x01U)
-#define GPIO_PA23_PIN                  PORT_PIN_PA23
+/*** Macros for GPIO_PA27 pin ***/
+#define GPIO_PA27_Set()               (PORT_SEC_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 27U))
+#define GPIO_PA27_Clear()             (PORT_SEC_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 27U))
+#define GPIO_PA27_Toggle()            (PORT_SEC_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 27U))
+#define GPIO_PA27_OutputEnable()      (PORT_SEC_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 27U))
+#define GPIO_PA27_InputEnable()       (PORT_SEC_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 27U))
+#define GPIO_PA27_Get()               (((PORT_SEC_REGS->GROUP[0].PORT_IN >> 27U)) & 0x01U)
+#define GPIO_PA27_PIN                  PORT_PIN_PA27
 
 /*** Macros for GPIO_PA30 pin ***/
 #define GPIO_PA30_Set()               (PORT_SEC_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 30U))

@@ -63,8 +63,8 @@ void SVCall_Handler (void);
 void PendSV_Handler (void);
 void EIC_EXTINT_0_InterruptHandler (void);
 void EIC_EXTINT_1_InterruptHandler (void);
-void SERCOM0_SPI_InterruptHandler (void);
-void SERCOM1_I2C_InterruptHandler (void);
+void SERCOM0_I2C_InterruptHandler (void);
+void SERCOM1_SPI_InterruptHandler (void);
 
 
 
